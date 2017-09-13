@@ -68,12 +68,12 @@
 
 
 
-        $("#customer_login_link").button().on("click", function () {
+        $("#customer_login_link").on("click", function () {
             loginDialog.dialog("open");
             return false;
         });
 
-        $("#customer_register_link").button().on("click", function () {
+        $("#customer_register_link").on("click", function () {
             registerDialog.dialog("open");
             return false;
         });
