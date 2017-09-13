@@ -40,15 +40,11 @@
 
         <link href="./lewsstuff_files/styles.scss.css" rel="stylesheet" type="text/css" media="all">
         <link href="./lewsstuff_files/social-icons.css" rel="stylesheet" type="text/css" media="all">
-        <link href="./lewsstuff_files/font-awesome.css" rel="stylesheet" type="text/css" media="all">
-
-        <link rel="stylesheet" type="text/css" href="./lewsstuff_files/css">
-
-
-        <link rel="stylesheet" type="text/css" href="./lewsstuff_files/css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
         <script type="text/javascript" async="" src="./lewsstuff_files/trekkie.storefront.min.js.download"></script><script src="./lewsstuff_files/html5shiv.js.download" type="text/javascript"></script>
-
+        <link href="css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <link href="css/dialogStyles.css" rel="stylesheet" type="text/css"/>
         <meta name="shopify-checkout-api-token" content="b2dc3c0c0f7de222e58282dc594a0739">
         <script type="text/javascript">
             //<![CDATA[
@@ -283,6 +279,43 @@
         </div>
         <!-- End toolbar -->
 
+        <!--*****BEGIN EDITS BY CHRIS G*****-->
+        <div id="login-form" title="Login">
+            <form id='loginForm'>
+                <fieldset>
+                    <label for="email">Email Address</label>
+                    <input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" value="" class="text ui-widget-content ui-corner-all">
+                    <!-- Allow form submission with keyboard without duplicating the dialog button -->
+                    <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+                </fieldset>
+            </form>
+        </div>
+
+
+        <div id="register-form" title="Create Account">
+            <form id='registerForm'>
+                <fieldset>
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName" value="" class="text ui-widget-content ui-corner-all">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName" value="" class="text ui-widget-content ui-corner-all">
+                    <label for="newEmail">Email Address</label>
+                    <input type="text" name="newEmail" id="newEmail" value="" class="text ui-widget-content ui-corner-all">
+                    <label for="password">Password</label>
+                    <input type="password" name="newPassword" id="newPassword" value="" class="text ui-widget-content ui-corner-all">
+
+                    <!-- Allow form submission with keyboard without duplicating the dialog button -->
+                    <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+                </fieldset>
+            </form>
+        </div>
+
+
+        <!--*****END EDITS BY CHRIS G*****-->
+
+
         <!-- Begin Mobile Nav -->
         <div class="row mobile-wrapper">    
             <nav class="mobile clearfix">
@@ -359,9 +392,9 @@
                             <span class="more"><i class="fa fa-user"></i></span>
                             <ul class="sub-menu" style="display: none;">
 
-                                <li class="customer-links"><a href="https://www.lewsstuff.com/account/login" id="customer_login_link">Log in</a></li>
+                                <li class="customer-links"><a href="#" id="customer_login_link">Log in</a></li>
 
-                                <li class="customer-links"><a href="https://www.lewsstuff.com/account/register" id="customer_register_link">Create an account</a></li>
+                                <li class="customer-links"><a href="#" id="customer_register_link">Create an account</a></li>
 
 
                             </ul>
@@ -1299,11 +1332,11 @@
 
                             <h4>Connect with us</h4>
                             <span class="social-links">
-                                <a href="https://www.facebook.com/lewsfishing" title="Follow us on Facebook"><span class="shopify-social-icon-facebook-circle"></span></a>
-                                <a href="https://twitter.com/lews_fishing" title="Follow us on Twitter"><span class="shopify-social-icon-twitter-circle"></span></a>
+                                <a href="https://www.facebook.com/lewsfishing" title="Follow us on Facebook"><span class="fa fa-facebook-square"></span></a><!--Didn't want to mess around too much fixing the icons, so I used icons from fontawesome.-->
+                                <a href="https://twitter.com/lews_fishing" title="Follow us on Twitter"><span class="fa fa-twitter"></span></a>
 
 
-                                <a href="https://www.instagram.com/lews_fishing/" title="Follow us on Instagram"><span class="shopify-social-icon-instagram-circle"></span></a>
+                                <a href="https://www.instagram.com/lews_fishing/" title="Follow us on Instagram"><span class="fa fa-instagram"></span></a>
 
 
 
@@ -1354,7 +1387,8 @@
 
         <script src="./lewsstuff_files/jquery.fancybox.js.download" type="text/javascript"></script>
         <script src="./lewsstuff_files/scripts.js.download" type="text/javascript"></script>
-
+        <script src="js/jquery-ui.js" type="text/javascript"></script>
+        <script src="js/Dialogs.js" type="text/javascript"></script>
 
 
 
