@@ -33,7 +33,7 @@
             $('#loginForm')[0].reset();
         }
 
-        loginDialog = $("#login-form").dialog({
+        var loginDialog = $("#login-form").dialog({
             autoOpen: false,
             height: 400,
             width: 350,
@@ -49,7 +49,7 @@
             }
         });
 
-        registerDialog = $("#register-form").dialog({
+        var registerDialog = $("#register-form").dialog({
             autoOpen: false,
             height: 400,
             width: 350,
@@ -70,11 +70,13 @@
 
         $("#customer_login_link").on("click", function () {
             loginDialog.dialog("open");
+            loginDialog.css('zIndex', 9999);
             return false;
         });
 
         $("#customer_register_link").on("click", function () {
             registerDialog.dialog("open");
+            registerDialog.css('zIndex', 9999);
             return false;
         });
 
