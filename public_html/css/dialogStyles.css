@@ -12,6 +12,7 @@ fieldset {
 .ui-dialog .ui-state-error { 
     padding: .3em; 
 }
+
 .validateTips { border: 1px solid transparent; 
                 padding: 0.3em; 
 }
@@ -19,7 +20,23 @@ fieldset {
 .ui-dialog-titlebar-close {
     visibility: hidden;
 }
+/*jQueryUI dialogs for logging in and registering*/
 #login-form input,#register-form input{
     background-color: #F9F8F3;
     color: #373735;
+}
+#login-form label,#register-form label{
+    color: #373735;
+}
+#errorContainer{
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: .8em;
+	display: none;
+	overflow: auto;
+	border: 4px solid #FF2323;
+	padding: 1px;
+}
+#errorContainer ul{
+	list-style-type: none;
+	font-size: .8em;
 }

@@ -898,20 +898,21 @@ body .ui-tooltip {
 	font-size: 1em;
 }
 .ui-widget.ui-widget-content {
-	border: 1px solid #72726E;
+        border: 1px solid #DAD9D3;
+;
 }
 .ui-widget-content {
-	border: 1px solid #E31336;
-	background: #373735;
+	border: 1px solid #DAD9D3;
+	background: #F9F8F3;
 	color: #F9F8F3;
 }
 .ui-widget-content a {
 	color: #F9F8F3;
 }
 .ui-widget-header {
-	border: 1px solid #E31336;
-	background: #000000;
-	color: #FFD527;
+	border: 1px solid #DAD9D3;
+	background: #FFD527;
+	color: #373735;
 	font-weight: bold;
 }
 .ui-widget-header a {
